@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afri Arasta | Data Analyst Portfolio</title>
+
+    <style>
+        /* ------------------ GLOBAL ------------------ */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            scroll-behavior: smooth;
+        }
+
+        h2 {
+            color: #0d1b2a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 0 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ------------------ HERO ------------------ */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #0a1124, #0d1b2a);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #ffffff55;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin: 8px 0;
+        }
+
+        .hero a {
+            color: #e0e1dd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ------------------ NAV ------------------ */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0d1b2a;
+            padding: 12px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #e0e1dd;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 8px white;
+        }
+
+        /* ------------------ CARDS ------------------ */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        /* ------------------ FOOTER ------------------ */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #0a1124;
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="C:\Users\afria\Downloads\Documents\My Pics\1709242409952.1.jpg" alt="Profile Photo">
+    <h1>Afri Arasta</h1>
+    <p>Data Analyst • SQL • Python • Tableau • Power BI</p>
+    <p>Boston, MA | +1 (857) 492-9808 | afriarasta@gmail.com</p>
+    <p>
+        <a href="https://linkedin.com/in/afriarasta">LinkedIn</a> |
+        <a href="https://github.com/afriarasta">GitHub</a> |
+        <a href="https://afriarasta.github.io">Portfolio</a>
+    </p>
+</div>
+
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Data Analyst with 5+ years of experience analyzing large datasets and delivering 
+        data-driven insights across healthcare, banking, and technology. Skilled in SQL, 
+        Python, Tableau, and Power BI with expertise in EDA, dashboard development, and 
+        predictive analytics. Proven ability to improve reporting accuracy, automate workflows, 
+        and support strategic decision-making.
+    </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+        <h3>Senior Data Analyst — P360 Solutions</h3>
+        <p><em>Sep 2023 – Sep 2024 | Remote</em></p>
+        <ul>
+            <li>Performed advanced SQL analysis improving reporting accuracy by 25%.</li>
+            <li>Built Power BI and Qlik dashboards tracking KPIs and data quality.</li>
+            <li>Conducted EDA and anomaly detection reducing processing delays by 40%.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Data Analyst — Tata Consultancy Services</h3>
+        <p><em>Apr 2022 – Sep 2023 | India</em></p>
+        <ul>
+            <li>Analyzed 500K+ customer and transaction records.</li>
+            <li>Developed Tableau dashboards for compliance and KPIs.</li>
+            <li>Performed A/B testing, KPI analysis, and ROI evaluation.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Data Governance & Analytics — Cognizant</h3>
+        <p><em>Oct 2019 – Apr 2022 | India</em></p>
+        <ul>
+            <li>Led data quality initiatives achieving 99.8% accuracy.</li>
+            <li>Performed EDA to identify reporting inconsistencies.</li>
+            <li>Defined data validation rules and governance metrics.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Telco Customer Churn Analysis</h3>
+        <p><strong>Python, SQL, Tableau</strong></p>
+        <ul>
+            <li>Built churn prediction models on ~1M telecom records.</li>
+            <li>Performed EDA and feature engineering.</li>
+            <li>Achieved ~0.84 ROC-AUC and built dashboards.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>CareEscapes AI — Donor Analytics</h3>
+        <p><strong>R, Power BI</strong></p>
+        <ul>
+            <li>Built donor analytics pipeline analyzing trends.</li>
+            <li>Applied K-means clustering for segmentation.</li>
+            <li>Developed predictive models for donor LTV.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Energy Efficiency Analytics</h3>
+        <p><strong>Python, Tableau</strong></p>
+        <ul>
+            <li>Built ETL pipelines integrating 250K+ records.</li>
+            <li>Identified usage patterns and efficiency opportunities.</li>
+            <li>Developed dashboards informing policy recommendations.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Programming & Analysis:</strong> SQL, Python, R</p>
+    <p><strong>Visualization:</strong> Tableau, Power BI, Qlik, Excel, Looker</p>
+    <p><strong>Data Platforms:</strong> MySQL, Salesforce</p>
+    <p><strong>Analytics:</strong> EDA, Data Cleaning, Statistical Analysis, A/B Testing, ML</p>
+    <p><strong>Data Management:</strong> ETL, Data Quality, Governance, Validation</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:afriarasta@gmail.com">afriarasta@gmail.com</a></p>
+    <p>Phone: +1 (857) 492-9808</p>
+    <p>Location: Boston, MA</p>
+</section>
+
+<footer>
+    © 2026 Afri Arasta — Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
